@@ -1,4 +1,3 @@
-/* CLAIMED BY GH0ST */
 #define true 1
 #define false 0
 #define SW 800
@@ -23,7 +22,7 @@ void PutPixel(int x, int y)
 	glVertex2f(x*SZPIX - SZPIX/2, y*SZPIX-SZPIX/2);
 }
 
-/*
+
 void PutCircle(unsigned int x0, unsigned int y0, unsigned int radius, int thickness)
 {
     int f = 1 - radius;
@@ -115,9 +114,9 @@ void PutCircle(unsigned int x0, unsigned int y0, unsigned int radius, int thickn
 	} 
     }
 }
-*/
 
-/*
+
+
 void AALine(int x0, int y0, int x1, int y1, int thick) {
  
   float m = ((float)y1 - (float)y0) / ((float)x1 - (float)x0);
@@ -159,7 +158,7 @@ void AALine(int x0, int y0, int x1, int y1, int thick) {
     if (e2 < dy) { err += dx; y0 += sy; }
   }
 }
-*/
+
 
 void display(void)
 {
@@ -187,7 +186,8 @@ glEnd();
 glPointSize(SZPIX);
 glColor4f(1, 1, 1, 1);
 glBegin(GL_POINTS);
-	PutPixel(10, 10);
+	PutCircle(10, 20, 30, 2);
+	PutLine(30, 30, 40,20, 4);
 glEnd();
 
 /* flush GL buffers */
