@@ -187,7 +187,7 @@ glPointSize(SZPIX);
 glColor4f(1, 1, 1, 1);
 glBegin(GL_POINTS);
 	PutCircle(10, 20, 30, 2);
-	PutLine(30, 30, 40,20, 4);
+	AALine(30, 30, 40,20, 4);
 glEnd();
 
 /* flush GL buffers */
